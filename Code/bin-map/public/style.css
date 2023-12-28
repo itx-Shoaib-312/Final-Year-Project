@@ -1,0 +1,127 @@
+body {
+    background-color: #e3e3e3;
+  }
+  .sideBar {
+    background-color: #fff;
+    height: 100%;
+    border-radius: 20px;
+  }
+  .mainC {
+    --bs-gutter-x: 0pc !important;
+  }
+  .mainContent {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 74%;
+  }
+  
+  #navbarNav{
+    justify-content: flex-end;
+  }
+  .expBtn{
+    background-color: #329600;
+    color: #fff !important;
+  }
+  .upperSection{
+    border-bottom: 1px solid #e3e3e3;
+    padding: 4px;
+  }
+  .secNav{
+    margin-right: 100px;
+  }
+  .line{
+    width: 2px;
+    height: 10px;
+    background-color: #329600;
+    margin-top: 15px;
+  }
+  .active{
+    background-color: #329600 !important;
+  }
+  .inpS{
+    border: none;
+    outline: none;
+    background-color: #EBEBEB;
+  }
+  .inpG{
+    border: 1px solid #D2E3EF;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #EBEBEB;
+
+  }
+  .myNav{
+    background-color: #FFFFFF;
+  }
+
+  .checkbox {
+opacity: 0;
+position: absolute;
+}
+
+.label {
+width: 50px;
+height: 26px;
+background-color:#EBEBEB;
+display: flex;
+border-radius:50px;
+align-items: center;
+justify-content: space-between;
+padding: 5px;
+position: relative;
+transform: scale(1.5);
+}
+
+
+.ball {
+width: 20px;
+height: 20px;
+background-color:#329600;
+position: absolute;
+top: 2px;
+left: 2px;
+border-radius: 50%;
+transition: transform 0.2s linear;
+}
+
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball{
+transform: translateX(24px);
+}
+.lightDarkMode{
+margin-top: 250px;
+}
+.darkMode{
+background-color: #333 ;
+color: #fff !important;
+}
+.darkMode label{
+  color: #fff !important;
+}
+.darkMode select{
+  color:#fff !important
+}
+.darkMode button{
+  color: #fff;
+}
+.logBtn{
+    background-color: #329600;
+    color: #fff;
+    font-weight: 700;
+}
+.logText{
+    color:#329600
+}
+.nav-link{
+  color: black;
+}
+  @media only screen and (max-width: 822px){
+/*Big smartphones [426px -> 600px]*/
+.sideBar{
+width: 100%;
+}
+.mainContent{
+width: 100%;
+}
+}
